@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--Стартовые стили шаблона-->
+  <link rel="stylesheet" href="css/starter.css">
+  <!--Ваши стили-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+	<container id="preloaderId">
+		<div class="divImg monitor"><div class="divImg logo"></div></div>
+		<div class="divImg mouse"></div>
+		<div class="divImg keyboard"></div>
+		
+	</container>
+	<!--НАЧАЛО Шапка-->
+  <header class="mainheader disabled" id = "header">
+	<img src="img/logo.jpg">
+    <div class="container">
+      <nav class="mainnav">
+      	<ul>
+      		<li class="active"><a>Лучший выбор</a></li>
+      		<li class=""><a>О компании</a></li>
+      		<li class=""><a>Техподдержка</a></li>
+      		<li class=""><a>Магазин</a></li>
+      		<li><img src="img/cart25.png"> <span>0</span></li>
+      	</ul>
+      </nav>
+	</div>
+  </header>
+
+  	<!--Шкала пролистывания-->
+  <div id = "progressBar" class = "bar disabled"></div>
+	<!--КОНЕЦ Шапка-->
+
+  <main id='Main' class="disabled">
+    <div class="container">
+     
+      <!--НАЧАЛО Секция "Лучший выбор"-->
+      <section id="sliderSection">
+        <h2>Лучший выбор</h2>
+        
+        <!--Стреки для листания слайдера-->
+				<img src="img/arrow_right.png" class="slider_arrow_right" id="forwardArrow">
+				<img src="img/arrow_left.png" class="slider_arrow_left" id="backwardArrow">
+       
+        <!--НАЧАЛО Обертка для слайдов-->
+        <div class="kit_slides_wrapper">
+         
+          <!-- НАЧАЛО Слайд №1-->
+        	<div class="kit_slide">
+        	  <img src="img/series/series1.jpg">
+        	  <div class="info">
+        	    <h3>THE LEGO MOVIE</h3>
+        	    <p>
+        	      Познакомься с наборами из серии THE LEGO® MOVIE 2™, посмотри, как Эммет разворачивает свой новый дом мечты/спасательную ракету, когда Мими Катавасия прибывает на звездолёте.
+        	    </p>
+        	  </div>
+        	</div>
+		  <!-- КОНЕЦ Слайд №1-->
+		  <!-- НАЧАЛО Слайд №2-->
+		  <div class="kit_slide" style="display: none;">
+			<img src="number1.png">
+			<div class="info">
+			  <h3>TEXT 1</h3>
+			  <p>
+				Не следует, однако забывать, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.
+			  </p>
+			</div>
+		  </div>
+		  <!-- КОНЕЦ Слайд №2-->
+		  <!-- НАЧАЛО Слайд №3-->
+		  <div class="kit_slide" style="display: none;">
+			<img src="number2.jpg">
+			<div class="info">
+			  <h3>TEXT 2</h3>
+			  <p>
+				Равным образом дальнейшее развитие различных форм деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+			  </p>
+			</div>
+		  </div>
+		  <!-- КОНЕЦ Слайд №3-->
+        </div>
+        <!--КОНЕЦ Обертка для слайдов-->
+      </section>
+      <!--КОНЕЦ Секция "Серии наборов"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "О компании"-->
+      <section id="about">
+      	<h2>О компании</h2>
+      	
+      	<p>
+      		<strong>LEGO Group</strong> — датская частная компания, занимающаяся производством одноимённых серий развивающих игрушек, представляющих собой наборы деталей для сборки и моделирования разнообразных предметов — конструкторов. Второй по величине (после Hasbro) производитель игрушек в мире.
+      	</p>
+      	<p>
+      		Головной офис компании находится в Дании. Здесь же, в Дании, на полуострове Ютландия, в небольшом городке Биллунд, находится и самый большой Леголенд в мире — город, полностью построенный из конструктора LEGO.
+      	</p>
+      	<p>
+      		Основой наборов является кирпичик LEGO — деталь, представляющая собой полый пластмассовый блок, соединяющийся с другими такими же кирпичиками на шипах. В наборы также могут входить множество других деталей: фигурки людей и животных, колёса и так далее. Существуют наборы, в которые входят электродвигатели, различного рода датчики и даже микроконтроллеры. Наборы позволяют собирать модели автомобилей, самолётов, кораблей, зданий, роботов. Воплощает идею модульности, наглядно демонстрирующий детям то, как можно решать некоторые технические проблемы, также прививает навыки сборки, ремонта и разборки техники.
+      	</p>
+      </section>
+      <!--КОНЕЦ Секция "О компании"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Техподдержка"-->
+      <section id="sendRequest">
+      	<h2>Техподдержка</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер-->
+      	<div class="order-wrapper">
+      	  <!--НАЧАЛО Левая часть с полями для ввода-->
+      		<div class="order-form">
+      			<!--Имя-->
+      			<label for="firstname_field">Имя* <span id="first" class="">Заполните это поле</span></label>
+      			<input type="text" id="firstname_field"> 
+      			<!--Фамилия-->
+      			<label for="lastname_field">Фамилия* <span id="second" class="">Заполните это поле</span></label>
+      			<input type="text" id="lastname_field">
+      			<!--Номер телефона-->     	
+      			<label for="phone_field">Телефон* <span id="third" class="">Заполните это поле</span></label>
+      			<input type="text" id="phone_field">
+      			<button id="orderButton">Отправить</button>
+      		</div>
+      	  <!--КОНЕЦ Левая часть с полями для ввода-->
+      	  
+      	  <!--НАЧАЛО Правая часть с сообщением-->
+      		<div class="order-alert">
+      			<p>
+      				<strong>Уважаемый, Иванов Н.</strong><br>
+      				Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону <strong><nobr>8 999 123 45 67</nobr></strong><br>
+      				Спасибо за обращение! 
+      			</p>
+      		</div>      	  
+      		<!--КОНЕЦ Правая часть с сообщением-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер-->
+      </section>
+      <!--КОНЕЦ Секция "Оставить заявку"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Магазин"-->
+      <section id="marketSection">
+      	<h2>Выбери игру</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+      	<div class="goods-wrapper">
+      	
+      		<!--НАЧАЛО Товар №1-->
+      		<div class="product">
+      			<img src="img/goods/death-stranding.jpg">
+      			<h4>Death Stranding</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №1-->
+      		<!--НАЧАЛО Товар №2-->
+      		<div class="product">
+      			<img src="img/goods/cyberpunk.jpg">
+      			<h4>Cyberpunk 2077</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №2-->
+      		<!--НАЧАЛО Товар №3-->
+      		<div class="product">
+      			<img src="img/goods/rainbow-six.jpg">
+      			<h4>Rainbow Six Siege</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №3-->
+      		
+      		<!--НАЧАЛО Товар №4-->
+      		<div class="product">
+      			<img src="img/goods/ghostrunner.jpg">
+      			<h4>Ghostrunner</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №4-->
+      		<!--НАЧАЛО Товар №5-->
+      		<div class="product">
+      			<img src="img/goods/Battlefront_2.jpg">
+      			<h4>Battlefront II</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №5-->
+      		<!--НАЧАЛО Товар №6-->
+      		<div class="product">
+      			<img src="img/goods/sea-of-thieves.jpg">
+      			<h4>Sea Of Thieves</h4>
+      			<button><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №6-->
+		  </div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+      </section>
+      <!--КОНЕЦ Секция "Магазин"-->
+	</div>
+	<div class="upwardArrow" id="upArrow"></div>
+  </main>
+  <script src='script.js'></script>
+</body>
+</html>
